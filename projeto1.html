@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="panda.png">
+    <title>Projetinho</title>
+</head>
+
+<body class="bg">
+    <header class="header">
+        <img src="ooi.png" alt="logo" width="90px">
+        <nav class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Contato</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1 class="titulo">Seja Bem-Vindo(a)</h1>
+        <img src="panda.png" alt="Logo" width="200px">
+    </div>
+    <div>
+        <p class="titulo">Escreva seu nome aqui:</p>
+        <input type="text" id="ipt_nome">
+        <button onclick="funcao()">Dizer oi</button>
+        <br>
+    </div>
+    <div class="titulo" ; id="res">
+</body>
+
+</html>
+
+<script>
+    function funcao() {
+        var nome = ipt_nome.value
+        res.innerHTML += '<br>Oi, ' + nome + '! Tudo bem?<br>'
+    }
+</script>
